@@ -1,124 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-           <meta charset="utf-8">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Merienda&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500&family=Zilla+Slab:ital@1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
-    <title>Twinkling Saumya & Shining Pearl</title>
-  </head>
-  <body>
-    <ul class="menu">
-      <li><a href="#home">Home  </a></li>
-      <li><a href="#about">About  </a></li>
-      <li><a href="#video">Videos  </a></li>
-      <li><a href="#work">Works  </a></li>
-      <li><a href="#skills">Skills  </a></li>
-      <li><a href="#contact">Contact  </a></li>
-    </ul>
-    <header id="home" class="flex-container">
-    <div>
-      <h1>Hi! I am,
-        <br>
-      <span>
-        Pearl Sinha
-      </span>
-      </h1>
-      <h2>I'm the founder of:
-      <br>
-      <section>
-        Twinkling Saumya & Shining Pearl, my channel.
-      </section>
-      </h2>
-    </div>
-      <img src="Twinkling-Saumya-&-Shining-Pearl.jpg" alt="Twinkling Saumya & Shining Pearl">
-    </header>
-    <div id="about" class="aboutme">
-      <h3>About Our Channel</h3>
-      <hr>
-      <p>My sister, Saumya, and I started our channel on 12 January 2020 during the lockdown of Covid-19.
-        We upload informative and entertaining videos in our channel.
-         <br><br>
-          Till date May 4, 2021 we have 26 videos, 96 likes and 4,740 views on our channel.
-        We make our video in both English and Hindi language.</p>
-    </div>
-    <div id="video" class="videos">
-      <h3>Videos of Our Channel</h3>
-      <hr>
-      <iframe width="300" height="200" src="https://www.youtube.com/embed/8iiJfRrM0xM" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="300" height="200" src="https://www.youtube.com/embed/Qdtip3xgvTI" title="YouTube video player" frameborder="2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <iframe width="300" height="200" src="https://www.youtube.com/embed/W06fridSe3w" title="YouTube video player" frameborder="4" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div id="Mywork" class="Work">
-      <div class="card">
-
-        <div class="container">
+    <title>HTML Canvas</title>
+</head>
+<body>
+    <div align="center">
+        <h1>Canvas Drawing</h1>
+        <canvas id="mycanvas" width="800" height="500" ></canvas>
+        <div>
+            <button id="btndraw1" onclick="draw_emoji()">Draw a Emoji</button>
+            <button id="btndraw2" onclick="draw_hut()">Draw a Hut</button>
+            <button id="btnerase" onclick="erase()">Erase</button>
         </div>
     </div>
-    </div>
-    <section id="work">
-      <h3>My Works</h3>
-      <hr>
-      <div class="row">
-        <div class="card">
-          <img src="Pong Gme.png" alt="Pong Game">
-          <p>
-          <a href="https://studio.code.org/projects/gamelab/o0jl77hGjXn7C0beoBSCOqDPsLvpegANNR-s-IB81kg" target="_blank">
-           Click here to open
-         </a>
-          </p>
-        </div>
-        <div class="card">
-          <img src="Tag the Emoji.jpg" alt="Tag the Emoji">
-          <p>
-          <a href="https://studio.code.org/projects/applab/oCEGKpOCAs252LxGG_UlR-3D4Q-sezF3IPEXRlZf138" target="_blank">
-           Click here to open
-         </a>
-          </p>
-        </div>
-        <div class="card">
-          <img src="Timer and Stopwatch.png" alt="Tag the Emoji">
-          <p>
-          <a href="https://studio.code.org/projects/applab/uI5Sj_xTIdV8C9R6u9aWFAtRXa7N8OHOq3RqBTrV1ZA" target="_blank">
-           Click here to open
-         </a>
-          </p>
-        </div>
-      </div>
-    </section>
-    <section id="skills">
-      <h3>My Skills</h3>
-      <hr>
-      <h4>Coding</h4>
-      <div class="container-bar">
-       <div class="skills coding">80%
-       </div>
-      </div>
-      <h4>Dancing</h4>
-      <div class="container-bar">
-       <div class="skills dance">90%
-       </div>
-      </div>
-      <h4>Singing</h4>
-      <div class="container-bar">
-       <div class="skills sing">95%
-       </div>
-      </div>
-      <h4>Cooking</h4>
-      <div class="container-bar">
-       <div class="skills cook">65%
-       </div>
-     </div>
-    </section>
-    <footer id="contact" class="Cont">
-      <br> <br>
-      <i class="fa fa-envelope"></i> <a href="mailto:pearlsaumya1210@gmail.com"> <h3>pearlsaumya1210@gmail.com</h3>
-      </a>
-      <br>
-       <i class="fa fa-mobile"></i> <a href="tel:1234567890"> <h3>+91 1234567890</h3>
-      </a>
-    </footer>
-  </body>
+    <script src="app.js"></script>
+</body>
 </html>
